@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Screens</string>
+    <string name="mountain_image">Mountain image</string>
+    <string name="mountain">Mountain</string>
 </resources>
