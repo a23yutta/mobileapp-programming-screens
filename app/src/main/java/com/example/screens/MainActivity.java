@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
+                intent.putExtra("greeting", "Hello"); // Optional
                 startActivity(intent);
                 Log.d("Tag", "New Activity");
             }
