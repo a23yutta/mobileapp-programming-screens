@@ -1,7 +1,7 @@
 package com.example.screens;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.nfc.Tag;
 import android.util.Log;
 import android.view.View;
@@ -14,11 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button button = findViewById(R.id.secondActivityButton);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button secondActivityButton = findViewById(R.id.secondActivityButton);
+        secondActivityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(intent);
                 Log.d("Tag", "New Activity");
             }
         });
