@@ -2,4 +2,6 @@
     <string name="app_name">Screens</string>
     <string name="mountain_image">Mountain image</string>
     <string name="mountain">Mountain</string>
+    <string name="go_to_second_activity">Go to second activity</string>
+    <string name="ButtonContentDecsription">Go to second activity</string>
 </resources>
